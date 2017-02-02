@@ -132,7 +132,7 @@ galaxy_info:
     - wily
     - xenial
     - yakkety
-    - zesty
+    # - zesty
   #- name: SLES
   #  versions:
   #  - all
