@@ -1,78 +1,42 @@
-Role Name
-=========
+# ansible-php
 
-An [Ansible] role to install various PHP packages.
+Ansible role to install PHP Packages
 
-Requirements
-------------
+## Build Status
 
-None
+### GitHub Actions
 
-Role Variables
---------------
+![Molecule Test](https://github.com/mrlesmithjr/ansible-php/workflows/Molecule%20Test/badge.svg)
 
-```
----
-# defaults file for ansible-php
-php_debian_packages:
-  # - 'libapache2-mod-php{{ php_version_debian }}'
-  - 'php{{ php_version_debian }}'
-  - 'php{{ php_version_debian }}-cli'
-  - 'php{{ php_version_debian }}-cgi'
-  - 'php{{ php_version_debian }}-curl'
-  # - 'php{{ php_version_debian }}-dev'
-  # - 'php{{ php_version_debian }}-fpm'
-  - 'php{{ php_version_debian }}-gd'
-  - 'php{{ php_version_debian }}-json'
-  - 'php{{ php_version_debian }}-ldap'
-  - 'php{{ php_version_debian }}-mysql'
-  # - 'php{{ php_version_debian }}-odbc'
-  # - 'php{{ php_version_debian }}-sqlite'
-  # - 'php{{ php_version_debian }}-xml'
-  # - 'php{{ php_version_debian }}-zip'
-php_redhat_packages:
-  - 'php'
-  - 'php-cli'
-  - 'php-curl'
-  - 'php-devel'
-  # - 'php-fpm'
-  - 'php-gd'
-  - 'php-json'
-  - 'php-ldap'
-  - 'php-mysql'
-  # - 'php-odbc'
-  # - 'php-xml'
-  # - 'php-zip'
-```
+### Travis CI
 
-Dependencies
-------------
+[![Build Status](https://travis-ci.org/mrlesmithjr/ansible-php.svg?branch=master)](https://travis-ci.org/mrlesmithjr/ansible-php)
 
-None
+## Requirements
 
-Example Playbook
-----------------
+For any required Ansible roles, review:
+[requirements.yml](requirements.yml)
 
-```
-- hosts: all
-  become: true
-  vars:
-  roles:
-    - role: ansible-php
-  tasks:
-```
+## Role Variables
 
-License
--------
+[defaults/main.yml](defaults/main.yml)
 
-BSD
+## Dependencies
 
-Author Information
-------------------
+## Example Playbook
+
+[playbook.yml](playbook.yml)
+
+## License
+
+MIT
+
+## Author Information
 
 Larry Smith Jr.
-- @mrlesmithjr
-- http://everythingshouldbevirtual.com
-- mrlesmithjr [at] gmail.com
 
-[Ansible]: <https://ansible.com>
+- [@mrlesmithjr](https://twitter.com/mrlesmithjr)
+- [mrlesmithjr@gmail.com](mailto:mrlesmithjr@gmail.com)
+- [http://everythingshouldbevirtual.com](http://everythingshouldbevirtual.com)
+
+> NOTE: Repo has been created/updated using [https://github.com/mrlesmithjr/cookiecutter-ansible-role](https://github.com/mrlesmithjr/cookiecutter-ansible-role) as a template.

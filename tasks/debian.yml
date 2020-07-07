@@ -1,6 +1,12 @@
 ---
-- name: debian | Installing PHP {{ php_version_debian }} Packages
+- name: debian | Updating APT Cache
   apt:
-    name: "{{ item }}"
+    update_cache: true
+    cache_valid_time: 3600
+  become: true
+
+- name: debian | Installing PHP Packages
+  apt:
+    name: "{{ php_debian_packages }}"
     state: present
-  with_items: '{{ php_debian_packages }}'
+  become: true
