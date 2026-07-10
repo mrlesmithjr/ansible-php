@@ -4,6 +4,8 @@ galaxy_info:
   description: Ansible role to install PHP Packages
   license: MIT
   min_ansible_version: 2.8
+  role_name: php
+  namespace: mrlesmithjr
 
   platforms:
     - name: Debian
